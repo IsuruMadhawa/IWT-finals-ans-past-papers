@@ -18,6 +18,12 @@
 		<?php 
 	
 		$conn = mysqli_connect("localhost","root","user321","employee");
+			// Check connection
+          	if($conn === false){
+              	die("ERROR: Could not connect. " 
+                  . mysqli_connect_error());
+          	}
+			
 		$records = mysqli_query($conn,"select * from salary tabale");
 		
 		while($data = mysqli_fetch_array($records))
