@@ -29,10 +29,10 @@
 		while($data = mysqli_fetch_array($records))
 		{
 		 $OTRate = $data['OTRate'];
-         $OTHours = $data['OTHours'];
+         	 $OTHours = $data['OTHours'];
 		 $BasicSal = $data['BasicSalary'];
 		 
-         $TotalSal = ($OTrate*$OTHours)+$BasicSal;
+         	 $TotalSal = ($OTrate*$OTHours)+$BasicSal;
 		 
 		 $month = $data['Month'];
 		 if($month==11){
